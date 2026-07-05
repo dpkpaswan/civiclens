@@ -99,7 +99,7 @@ export default function App() {
     setShowSql(false)
 
     try {
-      const res = await fetch("http://localhost:8000/query", {
+      const res = await fetch("https://civiclens-backend-817820730147.us-central1.run.app/query", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: queryText })
